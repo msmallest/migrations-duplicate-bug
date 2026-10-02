@@ -1,4 +1,4 @@
-import { Component, signal } from '@angular/core';
+import { Component, ContentChild, ElementRef, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 
 @Component({
@@ -8,5 +8,5 @@ import { RouterOutlet } from '@angular/router';
   templateUrl: './app.html',
 })
 export class App {
-  protected readonly title = signal('app');
+  @ContentChild('someRef') ref: ElementRef | undefined = undefined;
 }

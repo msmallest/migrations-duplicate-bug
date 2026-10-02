@@ -65,3 +65,14 @@ UPDATE package.json (828 bytes)
 UPDATE tsconfig.json (1125 bytes)
 ✔ Packages installed successfully.
 ```
+
+## Schematic: Migration to signal queries
+
+Added the following from the schematic doc example to both the root component of the library and application
+
+```ts
+  // plus imports
+  @ContentChild('someRef') ref: ElementRef | undefined = undefined;
+```
+
+Commit before schematic.

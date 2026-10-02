@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ContentChild, ElementRef } from '@angular/core';
 
 @Component({
   imports: [],
@@ -6,4 +6,6 @@ import { Component } from '@angular/core';
   styles: ``,
   template: ` <p>lib works!</p> `,
 })
-export class Lib {}
+export class Lib {
+  @ContentChild('someRef') ref: ElementRef | undefined = undefined;
+}
