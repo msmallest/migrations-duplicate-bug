@@ -1,6 +1,10 @@
 # Commands Ran
 
-## Generate empty workspace
+## Clean Workspace --> App --> Lib before migrations
+
+[Initial commits for those at that point](https://github.com/msmallest/migrations-duplicate-bug/commits/54314cf0deddb5838f6c8ce5b2a017b43d2960c1/)
+
+### Generate empty workspace
 
 ```bash
 >16:39/myDirectory ~ $ ng new migrations-duplicate-bug --no-create-application
@@ -19,7 +23,7 @@ CREATE migrations-duplicate-bug/.vscode/tasks.json (978 bytes)
     Successfully initialized git.
 ```
 
-## Generate Application
+### Generate Application
 
 ```bash
 >16:41/myDirectory/migrations-duplicate-bug ~ $ ng g app app
@@ -43,7 +47,7 @@ UPDATE package.json (799 bytes)
 ✔ Packages installed successfully.
 ```
 
-## Generate Library
+### Generate Library
 
 ```bash
 >16:41/myDirectory/migrations-duplicate-bug ~ $ ng g lib lib
