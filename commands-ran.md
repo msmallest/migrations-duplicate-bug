@@ -42,3 +42,22 @@ UPDATE tsconfig.json (934 bytes)
 UPDATE package.json (799 bytes)
 ✔ Packages installed successfully.
 ```
+
+## Generate Library
+
+```bash
+>16:41/myDirectory/migrations-duplicate-bug ~ $ ng g lib lib
+CREATE projects/lib/README.md (1423 bytes)
+CREATE projects/lib/ng-package.json (152 bytes)
+CREATE projects/lib/package.json (207 bytes)
+CREATE projects/lib/tsconfig.lib.json (486 bytes)
+CREATE projects/lib/tsconfig.lib.prod.json (401 bytes)
+CREATE projects/lib/tsconfig.spec.json (449 bytes)
+CREATE projects/lib/src/public-api.ts (64 bytes)
+CREATE projects/lib/src/lib/lib.spec.ts (511 bytes)
+CREATE projects/lib/src/lib/lib.ts (186 bytes)
+UPDATE angular.json (2666 bytes)
+UPDATE package.json (828 bytes)
+UPDATE tsconfig.json (1125 bytes)
+✔ Packages installed successfully.
+```
