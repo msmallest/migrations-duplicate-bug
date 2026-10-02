@@ -75,4 +75,43 @@ Added the following from the schematic doc example to both the root component of
   @ContentChild('someRef') ref: ElementRef | undefined = undefined;
 ```
 
-Commit before schematic.
+That was commited before schematic. Check out for easy running of schematic
+
+### `ng generate @angular/core:signal-queries-migration`
+
+```bash
+>16:43/myDirectory/migrations-duplicate-bug ~ $ ng generate @angular/core:signal-queries-migration
+✔ Which directory do you want to migrate? ./
+✔ Do you want to migrate as much as possible, even if it may break your build? No
+    Preparing analysis for: projects/app/tsconfig.app.json...
+    Scanning for queries: projects/app/tsconfig.app.json...
+    Preparing analysis for: projects/lib/tsconfig.lib.prod.json...
+    Scanning for queries: projects/lib/tsconfig.lib.prod.json...
+    Preparing analysis for: projects/lib/tsconfig.lib.json...
+    Scanning for queries: projects/lib/tsconfig.lib.json...
+    Preparing analysis for: projects/lib/tsconfig.spec.json...
+    Scanning for queries: projects/lib/tsconfig.spec.json...
+
+    Processing analysis data between targets...
+
+    Running migration for: projects/app/tsconfig.app.json...
+    Running migration for: projects/lib/tsconfig.lib.prod.json...
+    Running migration for: projects/lib/tsconfig.lib.json...
+    Running migration for: projects/lib/tsconfig.spec.json...
+
+    Successfully migrated to signal queries 🎉
+
+    Successfully migrated to signal queries 🎉
+      -> Migrated 2/2 queries.
+UPDATE projects/app/src/app/app.ts (322 bytes)
+UPDATE projects/lib/src/lib/lib.ts (428 bytes)
+WARNING: Formatting of files failed with the following error: Command failed: /Users/me/.nvm/versions/node/v22.22.3/bin/node /Users/me/myDirectory/migrations-duplicate-bug/node_modules/prettier/bin/prettier.cjs --write --no-error-on-unmatched-pattern --ignore-unknown projects/app/src/app/app.ts projects/lib/src/lib/lib.ts
+[error] projects/lib/src/lib/lib.ts: SyntaxError: 'from' expected. (1:47)
+[error] > 1 | import { Component, ElementRef, contentChild }{ Component, ElementRef, contentChild }{ Component, ElementRef, contentChild } from '@angular/core';
+[error]     |                                               ^
+[error]   2 |
+[error]   3 | @Component({
+[error]   4 |   imports: [],
+```
+
+See commit diff

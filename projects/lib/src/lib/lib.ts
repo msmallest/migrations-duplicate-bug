@@ -1,4 +1,4 @@
-import { Component, ContentChild, ElementRef } from '@angular/core';
+import { Component, ElementRef, contentChild }{ Component, ElementRef, contentChild }{ Component, ElementRef, contentChild } from '@angular/core';
 
 @Component({
   imports: [],
@@ -7,5 +7,5 @@ import { Component, ContentChild, ElementRef } from '@angular/core';
   template: ` <p>lib works!</p> `,
 })
 export class Lib {
-  @ContentChild('someRef') ref: ElementRef | undefined = undefined;
+  readonly ref = contentChild<ElementRef>('someRef');readonly ref = contentChild<ElementRef>('someRef');readonly ref = contentChild<ElementRef>('someRef');
 }
