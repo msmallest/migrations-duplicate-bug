@@ -1,6 +1,8 @@
 # MigrationsDuplicateBug
 
-MAIN BRANCH IS PRISTINE OF ANY MIGRATIONS, SEE ISSUE FOR BRANCHES
+MAIN BRANCH IS PRISTINE OF ANY MIGRATIONS
+
+Example branch for before/after reference and testing: `signal-queries-migration`
 
 Initial commits that added workspace/app/lib at that point in time: https://github.com/msmallest/migrations-duplicate-bug/commits/54314cf0deddb5838f6c8ce5b2a017b43d2960c1/
 
